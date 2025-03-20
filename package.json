@@ -2,11 +2,17 @@
   "name": "semantic-release-version-badge",
   "version": "1.0.0",
   "main": "lib/index.js",
-  "files": [
-    "lib"
-  ],
+  "types": "lib/index.d.ts",
+  "files": ["lib"],
   "type": "module",
   "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lcaparros/semantic-release-version-badge.git"
+  },
   "scripts": {
     "build": "tsc",
     "lint": "eslint .",
@@ -42,10 +48,14 @@
   "peerDependencies": {
     "semantic-release": ">=18.0.0"
   },
-  "keywords": [],
-  "contributors": [
-    "Luis Caparrós <luiscaparrosruiz@gmail.com>"
+  "keywords": [
+    "semantic-release",
+    "semantic-release-plugin",
+    "version",
+    "badge",
+    "readme"
   ],
+  "author": "Luis Caparrós <luiscaparrosruiz@gmail.com>",
   "homepage": "https://github.com/lcaparros/semantic-release-version-badge",
   "license": "Apache-2.0",
   "description": "A plugin for semantic-release that updates version badge in README file with latest bumped version",
