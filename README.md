@@ -77,10 +77,78 @@ npm install
 
 # Build the project
 npm run build
-
-# Run tests
-npm test
 ```
+
+## Commit Convention
+
+This project follows [Conventional Commits](https://www.conventionalcommits.org/) specification. Each commit message must be structured as follows:
+
+```bash
+<type>[optional scope]: <description>
+
+[optional body]
+
+[optional footer(s)]
+```
+
+### Types
+- `feat`: (Minor) New feature or significant enhancement
+- `fix`: (Patch) Bug fix
+- `docs`: (Patch) Documentation updates
+- `style`: (No Release) Code formatting changes
+- `refactor`: (Patch) Code restructuring without behavior change
+- `perf`: (Patch) Performance improvements
+- `test`: (No Release) Adding/modifying tests
+- `build`: (Patch) Changes affecting build system
+- `ci`: (No Release) Changes to CI configuration
+- `chore`: (No Release) Maintenance tasks
+- `revert`: (Special) Reverts a previous commit
+
+### Scopes
+Common scopes include:
+- `auth`: Authentication related changes
+- `api`: API endpoints
+- `db`: Database changes
+- `email`: Email functionality
+- `security`: Security features
+- `ui`: User interface
+- `docs`: Documentation
+- `tests`: Test infrastructure
+
+### Examples
+```bash
+feat(auth): add password reset functionality
+```
+```bash
+fix(email): handle sendgrid connection timeout
+```
+```bash
+docs(readme): update installation steps
+```
+```bash
+style(lint): format code according to prettier rules
+```
+```bash
+refactor(api): simplify error handling
+```
+
+### Breaking Changes
+For breaking changes:
+1. Add `!` after type/scope
+2. Add `BREAKING CHANGE:` in footer
+
+Example:
+```bash
+feat(auth)!: change authentication token format
+
+BREAKING CHANGE: New token format is not backward compatible with existing clients
+```
+
+### Version Impact
+- Breaking changes (`!`) -> Major version bump
+- `feat` -> Minor version bump
+- `fix`, `perf`, `refactor` -> Patch version bump
+- `docs`, `style`, `test`, `ci`, `chore` -> No version bump
 
 ## License
 
