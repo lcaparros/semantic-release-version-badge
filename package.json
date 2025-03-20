@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "semantic-release": ">=18.0.0",
-    "semantic-release-version-badge": "^1.0.1"
+    "semantic-release-version-badge": "^1.0.2"
   },
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.3",
