@@ -1,3 +1,11 @@
+## [1.0.3](https://github.com/lcaparros/semantic-release-version-badge/compare/v1.0.2...v1.0.3) (2025-03-20)
+
+
+### Bug Fixes
+
+* Trying again with new plugin ([304ebb7](https://github.com/lcaparros/semantic-release-version-badge/commit/304ebb7c558e580de4f5dd9f90ffb46d431ff5d3))
+* Updated plugin version ([63a4576](https://github.com/lcaparros/semantic-release-version-badge/commit/63a457698306b25e3d9672a96a3153bc0e15b9a4))
+
 ## [1.0.2](https://github.com/lcaparros/semantic-release-version-badge/compare/v1.0.1...v1.0.2) (2025-03-20)
 
 
