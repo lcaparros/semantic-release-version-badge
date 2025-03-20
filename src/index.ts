@@ -6,7 +6,7 @@ interface PluginConfig {
   readmePath?: string
 }
 
-async function prepare (pluginConfig: PluginConfig, context: PrepareContext): Promise<void> {
+async function prepare(pluginConfig: PluginConfig, context: PrepareContext): Promise<void> {
   const { nextRelease, logger } = context
   const readmePath = pluginConfig.readmePath || 'README.md'
   const badgeTemplate =
@@ -29,6 +29,6 @@ async function prepare (pluginConfig: PluginConfig, context: PrepareContext): Pr
   }
 }
 
-export = {
+export default {
   prepare
 }

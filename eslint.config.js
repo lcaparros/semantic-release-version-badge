@@ -1,4 +1,3 @@
-import eslintRecommended from 'eslint/use-at-your-own-risk'
 import tsParser from '@typescript-eslint/parser'
 import tsPlugin from '@typescript-eslint/eslint-plugin'
 import importPlugin from 'eslint-plugin-import'
@@ -8,11 +7,11 @@ import promisePlugin from 'eslint-plugin-promise'
 export default [
   {
     files: ['**/*.ts'],
-    ignores: ['**/*.test.ts', 'lib/'],
+    ignores: ['**/*.test.ts', 'lib/*'],
     languageOptions: {
       parser: tsParser,
       parserOptions: {
-        ecmaVersion: 2020,
+        ecmaVersion: 'latest',
         sourceType: 'module',
         project: './tsconfig.json'
       }
