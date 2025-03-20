@@ -1,3 +1,12 @@
+## [1.0.2](https://github.com/lcaparros/semantic-release-version-badge/compare/v1.0.1...v1.0.2) (2025-03-20)
+
+
+### Bug Fixes
+
+* Added semantic-release-version-badge plugin to this project ([c18267e](https://github.com/lcaparros/semantic-release-version-badge/commit/c18267ea2e0a1a2d5df5a89fd64465ae943d78e6))
+* testing package using ESM ([d14a90b](https://github.com/lcaparros/semantic-release-version-badge/commit/d14a90b62bd393a0ce609bd14ad75f095468f17d))
+* Trying with latest ESM ([3bdd9f7](https://github.com/lcaparros/semantic-release-version-badge/commit/3bdd9f744038013c38e9857342cd952935972059))
+
 ## [1.0.1](https://github.com/lcaparros/semantic-release-version-badge/compare/v1.0.0...v1.0.1) (2025-03-20)
 
 
