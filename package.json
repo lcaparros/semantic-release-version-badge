@@ -1,7 +1,10 @@
 {
   "name": "semantic-release-version-badge",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
   "type": "module",
   "private": false,
   "scripts": {
@@ -11,7 +14,8 @@
     "format": "prettier --write .",
     "test": "jest",
     "test:watch": "jest --watch",
-    "test:integration": "node test/integration/test.js"
+    "test:integration": "node test/integration/test.js",
+    "prepare": "npm run build"
   },
   "dependencies": {
     "semantic-release": ">=18.0.0"
