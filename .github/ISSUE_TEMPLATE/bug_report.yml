@@ -1,0 +1,94 @@
+name: 🐛 Bug Report
+description: Report an issue with the project
+title: '[Bug] '
+labels: ['bug']
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: '### 🐞 Bug Report'
+
+  - type: textarea
+    id: description
+    attributes:
+      label: '🔹 Description'
+      description: 'Explain the bug in detail.'
+      placeholder: 'A clear and concise description of the problem...'
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: '🛠 Steps to Reproduce'
+      description: 'List the steps to reproduce the issue.'
+      placeholder: |
+        1. Go to '...'
+        2. Click on '...'
+        3. See the error
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: '✅ Expected Behavior'
+      description: 'What should have happened instead?'
+      placeholder: 'The application should have...'
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: '❌ Actual Behavior'
+      description: 'What actually happened?'
+      placeholder: 'Instead, the application did...'
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: '📜 Logs & Screenshots'
+      description: 'Include error messages, logs, or screenshots if applicable.'
+      placeholder: 'Paste any relevant logs here...'
+    validations:
+      required: false
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: '⚠️ Severity Level'
+      options:
+        - 'Minor (does not affect functionality)'
+        - 'Moderate (affects some functionality but has a workaround)'
+        - 'Major (prevents normal usage, no workaround available)'
+        - 'Critical (breaks core functionality, urgent fix needed)'
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: '🌍 Environment'
+      description: 'Provide information about your setup.'
+      placeholder: |
+        - OS: (e.g., Windows 11, macOS 14, Ubuntu 22.04)
+        - Browser: (e.g., Chrome 120, Firefox 108)
+        - Node.js version: (if applicable)
+        - Other dependencies: (if applicable)
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: '✅ Checklist'
+      description: 'Before submitting, please verify:'
+      options:
+        - label: 'I have searched existing issues and this is not a duplicate.'
+          required: true
+        - label: 'I have included all necessary details for reproduction.'
+          required: true
