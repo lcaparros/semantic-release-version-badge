@@ -77,6 +77,9 @@ npm install
 
 # Build the project
 npm run build
+
+# Run tests
+npm test
 ```
 
 ## Commit Convention

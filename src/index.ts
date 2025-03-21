@@ -6,6 +6,15 @@ interface PluginConfig {
   readmePath?: string
 }
 
+function createBadgeRegex(template: string): RegExp {
+  // Escape special regex characters except $
+  const escapedTemplate = template
+    .replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+    .replace('\\$\\{version\\}', '.*?')
+
+  return new RegExp(escapedTemplate)
+}
+
 async function prepare(pluginConfig: PluginConfig, context: PrepareContext): Promise<void> {
   const { nextRelease, logger } = context
   const readmePath = pluginConfig.readmePath || 'README.md'
@@ -16,10 +25,8 @@ async function prepare(pluginConfig: PluginConfig, context: PrepareContext): Pro
   try {
     const content = await readFile(readmePath, 'utf-8')
     const newBadge = badgeTemplate.replace('${version}', nextRelease.version)
-    const updatedContent = content.replace(
-      /!\[Version\]\(https:\/\/img\.shields\.io\/badge\/version-.*-*\.svg\)/,
-      newBadge
-    )
+    const badgeRegex = createBadgeRegex(badgeTemplate)
+    const updatedContent = content.replace(badgeRegex, newBadge)
 
     await writeFile(readmePath, updatedContent)
     logger.log('Version badge updated successfully')

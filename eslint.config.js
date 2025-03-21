@@ -34,7 +34,7 @@ export default [
       'no-unused-vars': 'warn',
       'no-console': 'warn',
       indent: ['error', 2],
-      'space-before-function-paren': ['error', 'always'],
+      'space-before-function-paren': ['error', 'never'],
       'object-curly-spacing': ['error', 'always'],
       'array-bracket-spacing': ['error', 'never'],
       'comma-dangle': ['error', 'never'],
