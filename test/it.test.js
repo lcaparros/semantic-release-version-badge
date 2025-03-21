@@ -23,8 +23,6 @@ describe('semantic-release-version-badge', () => {
 
     const updatedContent = await readFile(readmePath, 'utf-8')
     expect(updatedContent).toContain('version-2.0.0-blue.svg')
-
-    await unlink(readmePath)
   })
 
   it('should update version badge in README with custom badgeTemplate and readmePath', async () => {
