@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/lcaparros/semantic-release-version-badge/compare/v1.0.4...v1.0.5) (2025-03-21)
+
+
+### Bug Fixes
+
+* Using badgeTemplate for matching regex in readme file ([fb008a1](https://github.com/lcaparros/semantic-release-version-badge/commit/fb008a1134f596e46016f0bca0467b3ef355d04e))
+
 ## [1.0.4](https://github.com/lcaparros/semantic-release-version-badge/compare/v1.0.3...v1.0.4) (2025-03-20)
 
 
