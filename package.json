@@ -24,8 +24,7 @@
     "prepare": "npm run build"
   },
   "dependencies": {
-    "semantic-release": ">=18.0.0",
-    "semantic-release-version-badge": "^1.0.2"
+    "semantic-release": ">=18.0.0"
   },
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.3",
@@ -44,6 +43,7 @@
     "jest": "^29.7.0",
     "prettier": "^3.5.3",
     "semantic-release": "^24.2.3",
+    "semantic-release-version-badge": "^1.0.5",
     "typescript": "^5.8.2"
   },
   "peerDependencies": {
