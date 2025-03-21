@@ -1,7 +1,9 @@
 # semantic-release-version-badge
 
-![Version](https://img.shields.io/badge/version-1.0.6-green.svg)
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+![Version](https://img.shields.io/badge/version-1.0.6-blue.svg)
+[![NPM Version](https://img.shields.io/npm/v/semantic-release-version-badge.svg)](https://www.npmjs.com/package/semantic-release-version-badge)
+[![GitHub Repository](https://img.shields.io/badge/GitHub-Repository-brightgreen.svg)](https://github.com/lcaparros/semantic-release-version-badge)
+[![License](https://img.shields.io/badge/License-Apache%202.0-purple.svg)](https://opensource.org/licenses/Apache-2.0)
 
 A [semantic-release](https://github.com/semantic-release/semantic-release) plugin that updates version badge in README file with the latest released version.
 

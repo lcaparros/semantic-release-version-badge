@@ -5,7 +5,7 @@
     "@semantic-release/release-notes-generator",
     "@semantic-release/changelog",
     "semantic-release-version-badge", {
-      "badgeTemplate": "![Version](https://img.shields.io/badge/version-${version}-green.svg)"
+      "badgeTemplate": "![Version](https://img.shields.io/badge/version-${version}-blue.svg)"
     },
     "@semantic-release/npm", {
       "pkgRoot": "lib"
