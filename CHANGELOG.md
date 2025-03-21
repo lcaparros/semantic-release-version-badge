@@ -1,3 +1,10 @@
+## [1.0.6](https://github.com/lcaparros/semantic-release-version-badge/compare/v1.0.5...v1.0.6) (2025-03-21)
+
+
+### Bug Fixes
+
+* Update and moved dependencies ([3b1174b](https://github.com/lcaparros/semantic-release-version-badge/commit/3b1174ba48ca56cb08cf2ac741cb7b5657a3d785))
+
 ## [1.0.5](https://github.com/lcaparros/semantic-release-version-badge/compare/v1.0.4...v1.0.5) (2025-03-21)
 
 
